@@ -3,185 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - [PEDRO-CUINHANE]</title>
+  <title>Portfólio - PEDRO CUINHANE</title>
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    /* ====== Estilos Gerais ====== */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
-      background: #f7f7f7;
-      color: #333;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
+      color: #333;
     }
 
     header {
-      background: #fff;
-      padding: 1.5rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
+      background: #111;
+      color: #fff;
+      padding: 20px;
     }
 
-    /* ====== Secção do Perfil ====== */
     .perfil {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 15px;
       flex-wrap: wrap;
-      gap: 1rem;
-      text-align: center;
-      animation: fadeIn 1s ease;
     }
 
     .foto-perfil {
-      width: 130px;
-      height: 130px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #00c853;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      animation: slideIn 1s ease;
+      border: 3px solid #fff;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.3rem;
-      animation: slideUp 1s ease;
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
     }
 
-    nav {
-      margin-top: 0.5rem;
+    header p {
+      margin-bottom: 10px;
     }
 
     nav a {
-      margin: 0 0.5rem;
+      color: #fff;
       text-decoration: none;
-      color: #00c853;
+      margin-right: 15px;
       font-weight: bold;
-      transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #00963f;
-    }
-
-    /* ====== Secções ====== */
-    section {
-      padding: 1.5rem;
-      max-width: 800px;
-      margin: 0 auto 2rem;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      animation: fadeInUp 1s ease;
-    }
-
-    h2 {
-      color: #00c853;
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    ul li {
-      background: #f1f1f1;
-      margin-bottom: 0.5rem;
-      padding: 0.5rem;
-      border-radius: 5px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #00c853;
-      color: #fff;
-    }
-
-    footer p {
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #00c853;
-      text-decoration: none;
-    }
-
-    a:hover {
       text-decoration: underline;
     }
 
-    /* ====== Responsividade ====== */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5rem;
-      }
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-      .foto-perfil {
-        width: 100px;
-        height: 100px;
+    section h2 {
+      margin-bottom: 15px;
+      color: #111;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    #contacto a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-right: 10px;
+      margin-top: 5px;
+      transition: 0.3s;
+    }
+
+    #contacto a.email {
+      background: #0072c6;
+    }
+
+    #contacto a:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .perfil {
+        flex-direction: column;
+        text-align: center;
       }
 
       nav a {
         display: inline-block;
-        margin: 0.3rem;
-      }
-    }
-
-    /* ====== Animações ====== */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes slideIn {
-      from {
-        opacity: 0;
-        transform: translateX(-30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
+        margin-bottom: 5px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Cabeçalho com imagem e nome -->
+  <!-- Cabeçalho -->
   <header>
     <div class="perfil">
-      <!-- 👉 Substitui 'foto.jpg' pelo nome do teu ficheiro -->
-      <img src="foto.jpg" alt="Foto de [O Teu Nome]" class="foto-perfil">
+      <img src="foto.jpg" alt="Foto de PEDRO CUINHANE" class="foto-perfil">
       <div>
-        <h1>[PEDRO-CUINHANE]</h1>
+        <h1>PEDRO CUINHANE</h1>
         <p>Programador Frontend | Full-Stack | Entusiasta de Tecnologia</p>
         <nav>
           <a href="#projetos">Projetos</a>
@@ -193,37 +140,50 @@
     </div>
   </header>
 
-  <!-- Secção Projetos -->
+  <!-- Projetos -->
   <section id="projetos">
     <h2>Projetos</h2>
-    <p>Aqui vais apresentar os teus trabalhos e links.</p>
+    <p>https//somtela.blogspot.com.</p>
+    <ul>
+      <li><a href="https://pedro-alfredo.github.io/Port-folio/" target="_blank">Ver Portfólio Online</a></li>
+    </ul>
   </section>
 
-  <!-- Secção Competências -->
+  <!-- Competências -->
   <section id="competencias">
     <h2>Competências</h2>
     <ul>
       <li>HTML / CSS / JavaScript</li>
       <li>React / Node.js</li>
       <li>Python / APIs</li>
+      <li>Design Responsivo</li>
     </ul>
   </section>
 
-  <!-- Secção Sobre -->
+  <!-- Sobre -->
   <section id="sobre">
     <h2>Sobre Mim</h2>
-    <p>Breve descrição sobre ti, tua experiência e objetivos.</p>
+    <p>
+      Sou programador dedicado, com paixão por transformar ideias em soluções digitais reais.  
+      Crio <strong>websites modernos</strong>, <strong>portfólios profissionais</strong>, <strong>blogues personalizados</strong> e aplicações web adaptadas às necessidades de cada cliente.  
+      O meu objetivo é entregar produtos práticos, bem estruturados e prontos para crescer online.
+    </p>
   </section>
 
-  <!-- Secção Contacto -->
+  <!-- Contacto -->
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>📞 <a href="https://wa.me/258856614967" target="_blank">WhatsApp</a></p>
-    <p>✉️ Cuinhanepedro250@gmail.com</p>
+    <a href="https://wa.me/258856614967" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="mailto:Cuinhanepedro250@gmail.com" class="email">
+      <i class="fas fa-envelope"></i> Email
+    </a>
   </section>
 
+  <!-- Rodapé -->
   <footer>
-    <p>© 2025 [PEDRO-CUINHANE]. Todos os direitos reservados.</p>
+    <p>© 2025 PEDRO CUINHANE. Todos os direitos reservados.</p>
   </footer>
 
 </body>
