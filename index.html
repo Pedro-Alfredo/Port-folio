@@ -4,13 +4,181 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - [PEDRO-CUINHANE]</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ====== Estilos Gerais ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    /* ====== Secção do Perfil ====== */
+    .perfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .foto-perfil {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00c853;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      animation: slideIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+      animation: slideUp 1s ease;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #00c853;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00963f;
+    }
+
+    /* ====== Secções ====== */
+    section {
+      padding: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      animation: fadeInUp 1s ease;
+    }
+
+    h2 {
+      color: #00c853;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      background: #f1f1f1;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #00c853;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #00c853;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ====== Responsividade ====== */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .foto-perfil {
+        width: 100px;
+        height: 100px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0.3rem;
+      }
+    }
+
+    /* ====== Animações ====== */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
 
   <!-- Cabeçalho com imagem e nome -->
   <header>
     <div class="perfil">
+      <!-- 👉 Substitui 'foto.jpg' pelo nome do teu ficheiro -->
       <img src="foto.jpg" alt="Foto de [O Teu Nome]" class="foto-perfil">
       <div>
         <h1>[PEDRO-CUINHANE]</h1>
@@ -25,13 +193,13 @@
     </div>
   </header>
 
-  <!-- Secção de Projetos -->
+  <!-- Secção Projetos -->
   <section id="projetos">
     <h2>Projetos</h2>
     <p>Aqui vais apresentar os teus trabalhos e links.</p>
   </section>
 
-  <!-- Secção de Competências -->
+  <!-- Secção Competências -->
   <section id="competencias">
     <h2>Competências</h2>
     <ul>
@@ -47,10 +215,10 @@
     <p>Breve descrição sobre ti, tua experiência e objetivos.</p>
   </section>
 
-  <!-- Secção de Contacto -->
+  <!-- Secção Contacto -->
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>📞 <a href="https://wa.me/258 856614967" target="_blank">WhatsApp</a></p>
+    <p>📞 <a href="https://wa.me/258856614967" target="_blank">WhatsApp</a></p>
     <p>✉️ Cuinhanepedro250@gmail.com</p>
   </section>
 
